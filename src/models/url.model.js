@@ -2,9 +2,18 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const body = {
-    real_url: String,
-    generated_url:String,
-    hits:Number
+    real_url: {
+        type:String,
+        required:true
+    },
+    generated_url:{
+        type:String,
+        required:true
+    },
+    hits:{
+        type:Number,
+        default:0
+    }
 }
 
 const options = {
