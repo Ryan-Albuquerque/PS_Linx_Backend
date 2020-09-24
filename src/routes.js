@@ -2,8 +2,9 @@ const express = require('express')
 
 const route = express.Router()
 
-route.get('/', (req,res)=>{
-    return res.json({mess:'ola mundo'})
-})
+const Handler = require('./middlewares/handlers/url.handler')
+const Controller = require('./controllers/url.controller')
+
+route.post('/create', Handler.handleCreate, Controller.create )
 
 module.exports = route
