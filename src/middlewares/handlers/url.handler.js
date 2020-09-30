@@ -17,7 +17,7 @@ async function handleCreate (req,res,next){
 
         if(response) return res.status(200).json(response)
 
-        if(!validator.isUri(body.url)) throw new Error('URL is not good')
+        if(!validator.isUri(body.url)) throw new Error("URL requires 'http://' before")
         
         await axios.get(body.url)
         .catch(()=>{
