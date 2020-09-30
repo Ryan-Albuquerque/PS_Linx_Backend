@@ -1,10 +1,10 @@
-## PS_LINX_FRONTEND : It's frontend of the Linx's Intern Challenge
+## PS_LINX_Backend: It's backend of the Linx's Intern Challenge
 
 ### `First of all`
 
-1 - Clone the repository.<br />
+1 - Clone the repository using : `git clone https://github.com/Ryan-Albuquerque/PS_Linx_Backend.git`.<br />
 
-2 - Run `npm install`to install all of dependencies.
+2 - Run `npm install`to install all of dependencies.<br />
 
 3 - In the project directory, you can run:
 
