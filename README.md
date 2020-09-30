@@ -1,18 +1,24 @@
-## Available Scripts
+## PS_LINX_FRONTEND : It's frontend of the Linx's Intern Challenge
 
-In the project directory, you can run:
+### `First of all`
 
-### `npm run dev`
+1 - Clone the repository.<br />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3333](http://localhost:3333) to view it in the browser.
+2 - Run `npm install`to install all of dependencies.
 
-The API will reload if you make edits.<br />
-You will also see any lint errors in the console.
+3 - In the project directory, you can run:
 
-### `npm run start`
+    ### `npm run dev`
 
-Builds the API for production<br />
+    Runs the app in the development mode.<br />
+    Open [http://localhost:3333](http://localhost:3333) to view it in the browser.
+
+    The API will reload if you make edits.<br />
+    You will also see any lint errors in the console.
+
+    ### `npm run start`
+
+    Builds the API for production<br />
 
 
 ### App Organization
