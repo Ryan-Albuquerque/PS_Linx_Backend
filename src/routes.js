@@ -1,10 +1,11 @@
 const express = require('express')
 
-const route = express.Router()
+const api = require('./routes/api.routes')
+const shorted = require('./routes/shorted.routes')
 
-const Handler = require('./middlewares/handlers/url.handler')
-const Controller = require('./controllers/url.controller')
+let route = express.Router()
 
-route.post('/create', Handler.handleCreate, Controller.create )
+route.use('/api', api)
+route.use('/u', shorted)
 
 module.exports = route

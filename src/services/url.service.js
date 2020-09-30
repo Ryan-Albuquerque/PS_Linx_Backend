@@ -1,4 +1,4 @@
-async function sortLetter(){
+async function generateId(){
     let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
     str = str.split("")
@@ -20,5 +20,5 @@ async function sortLetter(){
 }
 
 module.exports = {
-    sortLetter
+    generateId
 }

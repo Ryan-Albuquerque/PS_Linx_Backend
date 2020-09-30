@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config()
 
-mongoose.connect(`${process.env.mongosrv}`, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect(`${process.env.mongosrv}`, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false });
 
 mongoose.connection.on('connected', ()=>{
     console.log('MongoDB conectado com sucesso!')

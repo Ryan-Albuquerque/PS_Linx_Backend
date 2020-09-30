@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const body = {
-    real_url: {
+    url: {
         type:String,
         required:true
     },
-    generated_url:{
+    shortUrl:{
         type:String,
         required:true
     },
