@@ -17,7 +17,7 @@ async function handleCreate (req,res,next){
 
         if(response) return res.status(200).json(response)
 
-        if(!validator.isUri(body.url)) throw new Error('URL is not good')
+        if(!validator.isUri(body.url)) throw new Error('"Http://" before link is required')
         
         await axios.get(body.url)
         .catch(()=>{
@@ -58,7 +58,8 @@ async function handleGetTop5(req,res,next){
 
         next()
     }catch(error) {
-        res.json(error.message).send(400)
+        res.status(400)
+        res.json(error.message)
     }
 }
 
